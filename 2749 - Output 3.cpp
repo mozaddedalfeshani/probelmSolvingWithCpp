@@ -1,15 +1,24 @@
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
 
-    printf("---------------------------------------\n");
-    printf("|x = 35                               |\n");
-    printf("|                                     |\n");
-    printf("|               x = 35                |\n");
-    printf("|                                     |\n");
-    printf("|                               x = 35|\n");
-    printf("---------------------------------------\n");
+    cout << "---------------------------------------\n"
+         << endl;
+    cout << "|x = 35                               |\n"
+         << endl;
+    cout << "|                                     |\n"
+         << endl;
+    cout << "|               x = 35                |\n"
+         << endl;
+    cout << "|                                     |\n"
+         << endl;
+    cout << "|                               x = 35|\n"
+         << endl;
+    cout << "---------------------------------------\n"
+         << endl;
 
     return 0;
 }
