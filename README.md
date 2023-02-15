@@ -4,7 +4,7 @@
 # Welcome
 I hope you will enjoy with this repo.
 
-<b>Here you need to select different branch for difference Online coding solution </b>
+<b>Here you can select different branch for difference Online coding solution </b>
 
 ## Websites :
 
