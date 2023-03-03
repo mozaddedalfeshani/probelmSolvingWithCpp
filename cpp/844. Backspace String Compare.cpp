@@ -7,7 +7,8 @@ class Solution
 public:
     bool backspaceCompare(string s, string t)
     {
-        stack<str>
+        stack<str> value;
+        stack<str> value1;
        
     }
 };
