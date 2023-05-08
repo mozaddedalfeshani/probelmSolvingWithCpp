@@ -2,7 +2,7 @@
 // it will fail when it's test case goes out of range 
 //so please follow the part 2 code 
 // part 1 for best understanding with basic 
-
+///Part 2 is more optimized
 
 ///Part 2:
 class Solution {
