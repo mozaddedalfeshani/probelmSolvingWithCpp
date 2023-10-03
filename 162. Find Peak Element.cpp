@@ -1,3 +1,7 @@
+/*
+7ms
+Beats 33.33%of users with C++
+*/
 class Solution
 {
 public:
