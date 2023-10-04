@@ -1,3 +1,10 @@
+/*
+This algorithm is based on the idea of finding the minimum or maximum element in an unsorted array and then putting it in its correct position in a sorted array.
+Time Complexity: O(n^2)
+Space Complexity: O(1)
+
+*/
+
 #include <iostream>
 using namespace std;
 void selectionSort(int arr[], int n)
