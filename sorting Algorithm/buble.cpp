@@ -1,23 +1,29 @@
+/*
+This buble sort algorithm is not efficient as it takes O(n^2) time complexity.
+
+*/
 #include <iostream>
 using namespace std;
-int main()
+void bubleSort(int arr[], int n)
 {
-
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = 5;
     for (int i = 0; i < n; i++)
     {
-        for (int j = i; j < n - i - 1; j++)
+        for (int j = 0; j < n; j++)
         {
             if (arr[i] > arr[j])
-            {
                 swap(arr[i], arr[j]);
-            }
         }
     }
-    for (int i = 0; i < n; i++)
+}
+int main()
+{
+    int arr[] = {2, 3, 1, 5, 4};
+    bubleSort(arr, 5);
+    cout << "Sorted array is: ";
+    for (int i = 0; i < 5; i++)
     {
-        cout << arr[i];
+        cout << arr[i] << " ";
     }
+
     return 0;
 }
