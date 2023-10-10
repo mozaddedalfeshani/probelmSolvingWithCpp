@@ -1,28 +1,33 @@
 #include <iostream>
-#include <stdlib.h>
 using namespace std;
-int main(void)
+class solution
 {
-    int n;
-    cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
+public:
+    void insertationSort(int arr[], int n)
     {
-        cin >> arr[i];
-    }
-
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i + 1; j < n; j++)
+        for (int i = 1; i < n; i++)
         {
-
-            if (arr[i] > arr[j])
+            int current = arr[i];
+            int currentIndex = i;
+            int beforeIndex = i - 1;
+            while (beforeIndex >= 0 && current < arr[beforeIndex])
             {
-
-                swap(arr[i], arr[j]);
+                std::swap(arr[currentIndex], arr[beforeIndex]);
+                currentIndex--;
+                beforeIndex--;
             }
         }
     }
+
+private:
+    int n;
+};
+int main()
+{
+    int arr[] = {6, 2, 4, 5, 1, 3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    solution ob;
+    ob.insertationSort(arr, n);
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
